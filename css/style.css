@@ -92,7 +92,10 @@ section {
   }
 }
 .about-img img {
-  width: 22vw;
+   width: 35vw;
+  border-radius: 300px;
+  max-width: 400px;
+  border: 5px solid black;
 }
 .home-content h3 {
   font-size: 3.2rem;
