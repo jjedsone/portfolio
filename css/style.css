@@ -65,17 +65,15 @@ section {
   display: none;
 }
 .home {
-  display: flexbox;
+ display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .home-img img {
   animation: 1s float infinite;
-  position: relative;
   width: 35vw;
-  left: 800px;
-  top: -300px;
   border-radius: 300px;
   max-width: 400px;
   border:5px solid black;
