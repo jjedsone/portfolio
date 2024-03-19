@@ -48,7 +48,7 @@ ScrollReveal().reveal(".home-content h1,.about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p,.about-content", { origin: "right" });
 
 const typed = new Typed(".multiple-text", {
-  strings: ["Desenvolverdor HTML", "CSS Java script", "Python"],
+  strings: ["Desenvolvedor HTML", "CSS Java script", "Python"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
