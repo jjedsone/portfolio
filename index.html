@@ -180,19 +180,20 @@
   
   <section class="contatos" id="contatos">
     <h2 class="heading">Contato <span>Me!</span></h2>
-    <form action="http://localhost/meu_site/processa_contato.php" method="POST">
-      <div class="input-box">
-        <input type="text" name="nome" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email address" required>
-      </div>
-      <div class="input-box">
-        <input type="number" name="mobile" placeholder="Mobile">
-        <input type="text" name="assunto" placeholder="Email subject">
-      </div>
-      <textarea name="mensagem" cols="30" rows="10" placeholder="Your message" required></textarea>
-      <button type="submit" value="Send Message" class="btn">Send Message </button>
-    </form>
-</section>
+<form action="processa_contato.php" method="POST">
+  <div class="input-box">
+    <input type="text" name="nome" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email address" required>
+  </div>
+  <div class="input-box">
+    <input type="number" name="mobile" placeholder="Mobile">
+    <input type="text" name="assunto" placeholder="Email subject">
+  </div>
+  <textarea name="mensagem" cols="30" rows="10" placeholder="Your message" required></textarea>
+  
+  <!-- Botão para enviar o formulário -->
+  <button type="submit" class="btn">Send Message</button>
+</form>
 
 
   <!--footer disign-->
