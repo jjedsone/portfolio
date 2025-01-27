@@ -1,0 +1,22 @@
+{
+    "name": "portfolio-website",
+    "version": "1.0.0",
+    "description": "Website pessoal com informações sobre meus projetos, habilidades e serviços.",
+    "main": "index.js",
+    "scripts": {
+      "start": "live-server",
+      "build": "echo 'No build step defined'",
+      "test": "echo 'No tests defined'"
+    },
+    "keywords": ["portfolio", "website", "html", "css", "javascript"],
+    "author": "Jedson Silva",
+    "license": "MIT",
+    "dependencies": {
+      "typed.js": "^2.0.16",
+      "scrollreveal": "^4.0.9"
+    },
+    "devDependencies": {
+      "live-server": "^1.2.2"
+    }
+  }
+  
