@@ -1,13 +1,13 @@
-<?php
-// Configurações do banco de dados
-$host = 'localhost'; // ou seu host do banco de dados
-$dbname = 'meu_site'; // Nome do seu banco de dados
-$username = 'root'; // Usuário do banco de dados
-$password = ''; // Senha do banco de dados
+// Configurações do banco de dados a partir das variáveis de ambiente
+$host = getenv('DB_HOST');       // Host do banco de dados
+$dbname = getenv('DB_NAME');     // Nome do banco de dados
+$username = getenv('DB_USER');   // Usuário do banco de dados
+$password = getenv('DB_PASS');   // Senha do banco de dados
+$port = getenv('DB_PORT');       // Porta do banco de dados (se necessário)
 
 try {
     // Conexão com o banco de dados usando PDO
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Verifica se os dados foram enviados via POST
